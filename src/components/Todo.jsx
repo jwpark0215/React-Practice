@@ -1,11 +1,13 @@
 import './Todo.css'
 function Todo({ title }){
+    function deleteTodo(id){
+        console.log(console.log())
+    }
     console.log(title)
     return(
         <div className = "todo">
-            <h2>{title}</h2>
-            <span>Description</span>
-            <button>Delete</button>
+            <p>{title}</p>
+            <button onClick={() => deleteTodo()}>Delete</button>
         </div>
     )
 }
